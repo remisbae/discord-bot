@@ -20,3 +20,17 @@ As such, the main features of my bot are:
 ~~To add my bot to discord simply use the following [link](https://discordapp.com/oauth2/authorize?client_id=190034775170351104&scope=bot&permissions=0x0000010)
 (This only grants Manage Channels which is the very basic feature of the bot, you might wanna give the Bot role "Manage Roles" and "Manage Messages" as well for other features.)~~
 My bot is Offline since May 2017 since I can't really host it anymore, so you will have to host the bot yourself.
+
+### Hosting The Bot
+To host the bot follow these steps:
+* Get Python3 from [here](https://www.python.org/downloads/)
+* Download this directory as .zip and extract it somewhere.
+* Open up a command prompt or terminal and change the directory to the one you extracted it in.
+* Run `pip install -r requirements.txt`
+* Make a Discord Bot Account [here](https://discordapp.com/developers/applications/me/create)
+* Once you're done go to the bot's profile from [here](https://discordapp.com/developers/applications/me) 
+  * From here you want to keep the `Bot ID` and also click on `click to reveal` next to `Token` and save that as well.
+* Edit bot.py with a text editor of your choice and on the last line, replace `token here` in `'token here'` with the token from the discord bot account (make sure that the token is inside the quotations still)
+* Run bot.py
+
+To invite your own instance to your server you need to be logged in to browser discord and then in this link `https://discordapp.com/oauth2/authorize?client_id=ID_HERE&scope=bot&permissions=0x0000010` replace `ID_HERE` with the Bot ID from the discord bot account, then visit that link.
