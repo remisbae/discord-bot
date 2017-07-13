@@ -17,5 +17,6 @@ As such, the main features of my bot are:
     * Setting yourself to a class.
 
 ### Add to Discord
-To add my bot to discord simply use the following [link](https://discordapp.com/oauth2/authorize?client_id=190034775170351104&scope=bot&permissions=0x0000010)
-(This only grants Manage Channels which is the very basic feature of the bot, you might wanna give the Bot role "Manage Roles" and "Manage Messages" as well for other features.)
+~~To add my bot to discord simply use the following [link](https://discordapp.com/oauth2/authorize?client_id=190034775170351104&scope=bot&permissions=0x0000010)
+(This only grants Manage Channels which is the very basic feature of the bot, you might wanna give the Bot role "Manage Roles" and "Manage Messages" as well for other features.)~~
+My bot is Offline since May 2017 since I can't really host it anymore, so you will have to host the bot yourself.
