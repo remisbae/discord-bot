@@ -1,0 +1,83 @@
+$ git push heroku master >> log2.txt
+Counting objects: 159, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (159/159), 29.51 KiB | 0 bytes/s, done.
+Total 159 (delta 94), reused 159 (delta 94)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote:  !     Warning: Your application is missing a Procfile. This file tells Heroku how to run your application.
+remote:  !     Learn more: https://devcenter.heroku.com/articles/procfile
+remote: -----> Installing python-3.6.2
+remote: -----> Installing pip
+remote: -----> Installing requirements with pip
+remote:        Collecting discord.py (from -r /tmp/build_6b439d716fd60d531cbaedb31299eaf8/requirements.txt (line 1))
+remote:          Downloading discord.py-0.16.8.tar.gz (412kB)
+remote:        Collecting asyncio (from -r /tmp/build_6b439d716fd60d531cbaedb31299eaf8/requirements.txt (line 2))
+remote:          Downloading asyncio-3.4.3-py3-none-any.whl (101kB)
+remote:        Collecting logging (from -r /tmp/build_6b439d716fd60d531cbaedb31299eaf8/requirements.txt (line 3))
+remote:          Downloading logging-0.4.9.6.tar.gz (96kB)
+remote:            Complete output from command python setup.py egg_info:
+remote:            running egg_info
+remote:            creating pip-egg-info/logging.egg-info
+remote:            writing pip-egg-info/logging.egg-info/PKG-INFO
+remote:            writing dependency_links to pip-egg-info/logging.egg-info/dependency_links.txt
+remote:            writing top-level names to pip-egg-info/logging.egg-info/top_level.txt
+remote:            writing manifest file 'pip-egg-info/logging.egg-info/SOURCES.txt'
+remote:            Traceback (most recent call last):
+remote:              File "<string>", line 1, in <module>
+remote:              File "/tmp/pip-build-hq9c8ccw/logging/setup.py", line 13, in <module>
+remote:                packages = ["logging"],
+remote:              File "/app/.heroku/python/lib/python3.6/distutils/core.py", line 148, in setup
+remote:                dist.run_commands()
+remote:              File "/app/.heroku/python/lib/python3.6/distutils/dist.py", line 955, in run_commands
+remote:                self.run_command(cmd)
+remote:              File "/app/.heroku/python/lib/python3.6/distutils/dist.py", line 974, in run_command
+remote:                cmd_obj.run()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/egg_info.py", line 280, in run
+remote:                self.find_sources()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/egg_info.py", line 295, in find_sources
+remote:                mm.run()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/egg_info.py", line 526, in run
+remote:                self.add_defaults()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/egg_info.py", line 562, in add_defaults
+remote:                sdist.add_defaults(self)
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/py36compat.py", line 34, in add_defaults
+remote:                self._add_defaults_python()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/sdist.py", line 133, in _add_defaults_python
+remote:                build_py = self.get_finalized_command('build_py')
+remote:              File "/app/.heroku/python/lib/python3.6/distutils/cmd.py", line 298, in get_finalized_command
+remote:                cmd_obj = self.distribution.get_command_obj(command, create)
+remote:              File "/app/.heroku/python/lib/python3.6/distutils/dist.py", line 846, in get_command_obj
+remote:                klass = self.get_command_class(command)
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/dist.py", line 572, in get_command_class
+remote:                self.cmdclass[command] = cmdclass = ep.load()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2316, in load
+remote:                return self.resolve()
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2322, in resolve
+remote:                module = __import__(self.module_name, fromlist=['__name__'], level=0)
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/command/build_py.py", line 15, in <module>
+remote:                from setuptools.lib2to3_ex import Mixin2to3
+remote:              File "/app/.heroku/python/lib/python3.6/site-packages/setuptools/lib2to3_ex.py", line 12, in <module>
+remote:                from lib2to3.refactor import RefactoringTool, get_fixers_from_package
+remote:              File "/app/.heroku/python/lib/python3.6/lib2to3/refactor.py", line 17, in <module>
+remote:                import logging
+remote:              File "/tmp/pip-build-hq9c8ccw/logging/logging/__init__.py", line 618
+remote:                raise NotImplementedError, 'emit must be implemented '\
+remote:                                         ^
+remote:            SyntaxError: invalid syntax
+remote:
+remote:            ----------------------------------------
+remote:        Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-hq9c8ccw/logging/
+remote:  !     Push rejected, failed to compile Python app.
+remote:
+remote:  !     Push failed
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to rain288-bot.
+remote:
+To https://git.heroku.com/rain288-bot.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/rain288-bot.git'

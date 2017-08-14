@@ -1,0 +1,57 @@
+Collecting pytz (from -r requirements.txt (line 1))
+  Using cached pytz-2017.2-py2.py3-none-any.whl
+Collecting discord.py (from -r requirements.txt (line 2))
+  Using cached discord.py-0.16.8.tar.gz
+Collecting logging (from -r requirements.txt (line 3))
+  Using cached logging-0.4.9.6.tar.gz
+    Complete output from command python setup.py egg_info:
+    running egg_info
+    creating pip-egg-info\logging.egg-info
+    writing pip-egg-info\logging.egg-info\PKG-INFO
+    writing dependency_links to pip-egg-info\logging.egg-info\dependency_links.txt
+    writing top-level names to pip-egg-info\logging.egg-info\top_level.txt
+    writing manifest file 'pip-egg-info\logging.egg-info\SOURCES.txt'
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "C:\Users\------\AppData\Local\Temp\pip-build-qja9__5s\logging\setup.py", line 13, in <module>
+        packages = ["logging"],
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\distutils\core.py", line 148, in setup
+        dist.run_commands()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\distutils\dist.py", line 955, in run_commands
+        self.run_command(cmd)
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\distutils\dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\egg_info.py", line 280, in run
+        self.find_sources()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\egg_info.py", line 295, in find_sources
+        mm.run()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\egg_info.py", line 526, in run
+        self.add_defaults()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\egg_info.py", line 562, in add_defaults
+        sdist.add_defaults(self)
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\py36compat.py", line 34, in add_defaults
+        self._add_defaults_python()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\sdist.py", line 133, in _add_defaults_python
+        build_py = self.get_finalized_command('build_py')
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\distutils\cmd.py", line 298, in get_finalized_command
+        cmd_obj = self.distribution.get_command_obj(command, create)
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\distutils\dist.py", line 846, in get_command_obj
+        klass = self.get_command_class(command)
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\dist.py", line 572, in get_command_class
+        self.cmdclass[command] = cmdclass = ep.load()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\pkg_resources\__init__.py", line 2316, in load
+        return self.resolve()
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\pkg_resources\__init__.py", line 2322, in resolve
+        module = __import__(self.module_name, fromlist=['__name__'], level=0)
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\command\build_py.py", line 15, in <module>
+        from setuptools.lib2to3_ex import Mixin2to3
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\site-packages\setuptools\lib2to3_ex.py", line 12, in <module>
+        from lib2to3.refactor import RefactoringTool, get_fixers_from_package
+      File "c:\users\------\appdata\local\programs\python\python36-32\lib\lib2to3\refactor.py", line 17, in <module>
+        import logging
+      File "C:\Users\------\AppData\Local\Temp\pip-build-qja9__5s\logging\logging\__init__.py", line 618
+        raise NotImplementedError, 'emit must be implemented '\
+                                 ^
+    SyntaxError: invalid syntax
+    
+    ----------------------------------------

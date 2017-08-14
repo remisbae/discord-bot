@@ -64,4 +64,4 @@ async def on_message(message):
             await asyncio.sleep(3600)
             await client.delete_message(message)
 
-client.run('token here')
+client.run('MzQzMTg2NTczODQ5Nzg4NDE3.DHKdfg.FCGy_bL1KS3fPE0b2EQyNADeZ0s')
